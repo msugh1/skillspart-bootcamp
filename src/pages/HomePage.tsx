@@ -52,7 +52,6 @@ export default function HomePage() {
       </section>
       <section className="px-5 py-20 sm:px-8 sm:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          <Reveal><PhotoFrame name="lab" w={900} h={750} /></Reveal>
           <div>
             <SectionHeading eyebrow="How it works" title="A connected learning experience">
               Google Classroom is planned for weekly modules, Google Meet for practical sessions and WhatsApp for daily learning community communication.
@@ -62,6 +61,7 @@ export default function HomePage() {
             ].map(({ icon: Icon, label }) => <div key={label} className="flex items-center gap-3 rounded-xl border border-line p-4 font-semibold text-navy"><Icon size={19} className="text-spark-dark" aria-hidden />{label}</div>)}</div>
             <p className="mt-4 text-sm text-muted">Expert sessions and follow-up mentorship are programme goals, subject to facilitator availability.</p>
           </div>
+          <Reveal><PhotoFrame name="lab" w={900} h={750} /></Reveal>
         </div>
       </section>
       <section className="border-t border-line bg-white px-5 py-20 sm:px-8 sm:py-24">
