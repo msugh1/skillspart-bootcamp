@@ -1,11 +1,13 @@
 {
-  "name": "figma-make-app",
+  "name": "skillspark-bootcamp",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm typecheck && pnpm build",
     "preview": "vite preview",
     "format": "oxfmt"
   },

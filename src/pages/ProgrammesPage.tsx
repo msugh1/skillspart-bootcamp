@@ -11,7 +11,7 @@ export default function ProgrammesPage() {
   return (
     <>
       <PageHero eyebrow="Programmes" title="Pick a pathway and start building.">
-        One programme is almost ready to open, and more are being planned.
+        SkillSpark is designed around Cybersecurity, IT Support and IT Automation. Cybersecurity is the inaugural focus.
       </PageHero>
 
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
@@ -22,7 +22,7 @@ export default function ProgrammesPage() {
       <section className="bg-mist px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow="More pathways" title="More pathways are coming">
-            These programmes are in planning. No dates or enrolment yet.
+            IT Support and IT Automation are planned tracks. Their schedules and enrollment are not yet announced.
           </SectionHeading>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {PROGRAMMES.filter((p) => p.status === "coming-next").map((p) => <ProgrammeCard key={p.slug} p={p} />)}

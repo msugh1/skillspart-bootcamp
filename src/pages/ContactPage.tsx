@@ -41,7 +41,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHero eyebrow="Contact" title="Questions? Let us help.">
-        Send us a message about applications, programmes or anything else. Your message opens in your own email app.
+        Questions about programmes, partnerships or applications? Your message will open in your email application for you to send.
       </PageHero>
 
       <section className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[1fr_1.4fr]">
