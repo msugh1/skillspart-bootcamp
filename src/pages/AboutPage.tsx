@@ -8,11 +8,11 @@ import Reveal from "../components/ui/Reveal";
 import SectionHeading from "../components/ui/SectionHeading";
 
 const values = [
-  { icon: Wrench, title: "Practical learning", body: "We teach by doing, with labs and projects in every programme." },
+  { icon: Wrench, title: "Practical learning", body: "We focus on building useful skills through structured, practical training." },
   { icon: HeartHandshake, title: "Inclusion", body: "No gatekeeping. Beginners are the audience, not an afterthought." },
   { icon: Lightbulb, title: "Curiosity", body: "Good questions matter more than quick answers." },
-  { icon: Users, title: "Community", body: "Learners grow faster with mentors and peers beside them." },
-  { icon: Briefcase, title: "Career readiness", body: "Portfolio work and guidance help you plan what comes next." },
+  { icon: Users, title: "Community", body: "We seek to build a supportive peer community and mentorship opportunities." },
+  { icon: Briefcase, title: "Career readiness", body: "We aim to connect learning with meaningful career pathways." },
 ];
 
 const audience = [
@@ -26,16 +26,16 @@ export default function AboutPage() {
   return (
     <>
       <PageHero eyebrow="About SkillSpark" title="Opening the door to practical tech skills.">
-        SkillSpark Bootcamp is an edtech initiative focused on practical digital and technology skills, starting with Cybersecurity.
+        SkillSpark is a free online technology bootcamp and Millennium Fellowship 2026 project aligned with SDG 4: Quality Education. It starts with Cybersecurity and plans additional IT Support and IT Automation tracks.
       </PageHero>
 
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-2">
         <Reveal>
           <SectionHeading eyebrow="Why we exist" title="Closing the skills gap, one learner at a time">
-            Demand for digital skills keeps growing, but good entry points are hard to find. Many courses assume experience, or teach theory without practice.
+            Students from underserved communities across Nigeria may face barriers to structured technology training, resources and mentorship.
           </SectionHeading>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            SkillSpark offers a different path: clear, supportive, hands-on programmes that help beginners build real capability and confidence.
+            Founded by Msugh F. Demkiir (Felix), a Millennium Fellow and cybersecurity student at NUTM Lagos, SkillSpark aims to make industry-relevant learning more accessible.
           </p>
         </Reveal>
         <Reveal delay={0.1}><PhotoFrame name="lab" w={900} h={700} /></Reveal>
@@ -44,10 +44,10 @@ export default function AboutPage() {
       <section className="border-t border-line px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2">
           <FeatureCard icon={Target} title="Our mission">
-            To make practical digital skills accessible, understandable and achievable for motivated learners.
+            To close the digital-skills gap through free, practical training, access to learning resources and a supportive peer community.
           </FeatureCard>
           <FeatureCard icon={Eye} title="Our vision">
-            A future where anyone with curiosity can find a supported route into technology.
+            A Nigeria where young people from underserved communities can develop verifiable skills and pursue meaningful technology opportunities.
           </FeatureCard>
         </div>
       </section>

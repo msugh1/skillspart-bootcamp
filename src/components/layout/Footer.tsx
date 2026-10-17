@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-line px-5 py-6 text-center text-xs text-muted sm:px-8">
-        © {new Date().getFullYear()} SkillSpark Bootcamp. Photography by {credits} on Unsplash.
+        © {new Date().getFullYear()} SkillSpark Bootcamp. A Millennium Fellowship project · SDG 4. <Link to="/privacy" className="underline hover:text-navy">Privacy</Link>. {credits && <>Photography by {credits} on Unsplash.</>}
       </div>
     </footer>
   );

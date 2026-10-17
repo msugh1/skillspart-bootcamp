@@ -1,5 +1,4 @@
 import type { MEDIA } from "./media";
-
 export interface Programme {
   slug: string;
   title: string;
@@ -15,86 +14,43 @@ export interface Programme {
   canApply: boolean;
   href?: string;
 }
-
 export const PROGRAMMES: Programme[] = [
   {
-    slug: "cybersecurity",
-    title: "Cybersecurity",
-    status: "open-soon",
-    eyebrow: "Inaugural programme",
-    summary:
-      "Learn how digital systems are attacked and defended. Eight weeks of live teaching, guided labs and a capstone project, built for complete beginners.",
-    duration: "8 weeks",
-    format: "Live online",
-    level: "Beginner friendly",
-    image: "cyber",
-    skills: [
-      "Security foundations",
-      "Threats and vulnerabilities",
-      "Networks and systems",
-      "Identity and access",
-      "Safe digital practices",
-      "Incident response",
-    ],
+    slug: "cybersecurity", title: "Cybersecurity", status: "open-soon",
+    eyebrow: "Inaugural programme", 
+    summary: "A beginner-friendly introduction to protecting digital systems, understanding cyber threats and developing safe technical habits.",
+    duration: "6–8 weeks", format: "Online", level: "Beginner friendly", image: "cyber",
+    skills: ["Digital safety", "Cyber threats", "Network fundamentals", "Identity protection", "Defensive practices"],
     outcomes: [
-      "Explain core security concepts in plain language",
-      "Spot common threats and weak points in everyday systems",
-      "Apply basic defensive practices in guided labs",
-      "Present a portfolio project and a clear next-step plan",
+      "Explain foundational security concepts",
+      "Recognise common online threats",
+      "Apply safer security habits",
+      "Identify a pathway for further technical learning",
     ],
-    canApply: true,
-    href: "/programmes/cybersecurity",
+    canApply: false, href: "/programmes/cybersecurity",
   },
   {
-    slug: "web-development",
-    title: "Web Development",
-    status: "coming-next",
-    eyebrow: "Coming next",
-    summary: "Build and ship real websites with modern tools.",
-    duration: "To be announced",
-    format: "Live online",
-    level: "Beginner friendly",
-    skills: ["HTML and CSS", "JavaScript", "Deployment"],
-    outcomes: [],
-    canApply: false,
+    slug: "it-support", title: "IT Support", status: "coming-next",
+    eyebrow: "Planned track",
+    summary: "Explore essential troubleshooting, device setup and everyday technical support skills.",
+    duration: "6–8 week bootcamp model", format: "Online", level: "Beginner-oriented",
+    skills: ["Troubleshooting", "Computer systems", "User support"], outcomes: [], canApply: false,
   },
   {
-    slug: "data-ai",
-    title: "Data & AI",
-    status: "coming-next",
-    eyebrow: "Coming next",
-    summary: "Turn data into decisions and understand how AI works.",
-    duration: "To be announced",
-    format: "Live online",
-    level: "Beginner friendly",
-    skills: ["Data literacy", "Analysis", "AI foundations"],
-    outcomes: [],
-    canApply: false,
-  },
-  {
-    slug: "product-design",
-    title: "Product Design",
-    status: "coming-next",
-    eyebrow: "Coming next",
-    summary: "Design useful, usable digital products from idea to prototype.",
-    duration: "To be announced",
-    format: "Live online",
-    level: "Beginner friendly",
-    skills: ["Research", "Interface design", "Prototyping"],
-    outcomes: [],
-    canApply: false,
+    slug: "it-automation", title: "IT Automation", status: "coming-next",
+    eyebrow: "Planned track",
+    summary: "Explore how scripts and repeatable workflows can make everyday IT tasks more efficient.",
+    duration: "6–8 week bootcamp model", format: "Online", level: "Beginner-oriented",
+    skills: ["Automation concepts", "Scripts", "Workflows"], outcomes: [], canApply: false,
   },
 ];
-
 export const CYBER = PROGRAMMES[0];
-
+// Topic previews are provisional. This is not a confirmed weekly timetable.
 export const CURRICULUM = [
-  { week: 1, title: "Digital safety and security mindset", body: "Why security matters and how attackers think." },
-  { week: 2, title: "Systems, networks, and the internet", body: "How devices talk to each other, and where it goes wrong." },
-  { week: 3, title: "Threats, vulnerabilities, and risk", body: "Recognise common attacks and weigh their impact." },
-  { week: 4, title: "Identity, authentication, and access", body: "Passwords, multi-factor sign-in and least privilege." },
-  { week: 5, title: "Defensive tools and monitoring", body: "Meet the tools defenders use to see and stop problems." },
-  { week: 6, title: "Incident response fundamentals", body: "What to do, in order, when something goes wrong." },
-  { week: 7, title: "Guided practical challenge", body: "Apply everything in a hands-on scenario with mentor support." },
-  { week: 8, title: "Capstone presentation and next steps", body: "Present your project and plan your learning path." },
+  { week: 1, title: "Digital safety and security mindset", body: "Understand why protecting information and devices matters." },
+  { week: 2, title: "Systems and networks", body: "Explore how computers and connected services communicate." },
+  { week: 3, title: "Threats and vulnerabilities", body: "Recognise common attack patterns, scams and technical weaknesses." },
+  { week: 4, title: "Authentication and identity", body: "Learn about passwords, multifactor authentication and permissions." },
+  { week: 5, title: "Everyday defensive practice", body: "Apply practical precautions to protect accounts and devices." },
+  { week: 6, title: "Security career pathways", body: "Explore entry points, further study and responsible professional practice." },
 ];
