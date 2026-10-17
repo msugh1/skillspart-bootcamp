@@ -21,15 +21,15 @@ const steps = [
 export default function HomePage() {
   return (
     <>
-      <div className="border-b border-line bg-mist px-5 py-3 text-center text-xs font-bold text-navy sm:text-sm">Free digital-skills bootcamp · Inaugural Cybersecurity intake in preparation</div>
-      <section className="border-b border-line bg-white">
+      <div className="border-b border-navy/10 bg-spark px-5 py-3 text-center text-xs font-bold text-navy sm:text-sm">Free digital-skills bootcamp · Inaugural Cybersecurity intake in preparation</div>
+      <section className="border-b border-navy/10 bg-spark">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:py-28">
           <div>
-            <p className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-spark-dark"><span className="h-0.5 w-7 bg-spark" />SkillSpark Bootcamp</p>
-            <h1 className="max-w-2xl text-4xl font-extrabold leading-[1.08] text-navy sm:text-5xl lg:text-6xl">Ignite your potential. <span className="text-spark-dark">Build skills for tomorrow.</span></h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">A free, 6–8 week online technology intensive for learners aged 16 and above, focused on practical skills and opportunities for underserved Nigerian communities.</p>
-            <div className="mt-9 flex flex-wrap gap-3"><ButtonLink to="/programmes/cybersecurity">Explore Cybersecurity</ButtonLink><ApplyButton /></div>
-            <p className="mt-7 text-sm text-muted">A Millennium Fellowship 2026 project aligned with SDG 4: Quality Education.</p>
+            <p className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-navy"><span className="h-0.5 w-7 bg-navy" />SkillSpark Bootcamp</p>
+            <h1 className="max-w-2xl text-4xl font-extrabold leading-[1.08] text-navy sm:text-5xl lg:text-6xl">Ignite your potential. <span className="text-navy">Build skills for tomorrow.</span></h1>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-navy/85">A free, 6–8 week online technology intensive for learners aged 16 and above, focused on practical skills and opportunities for underserved Nigerian communities.</p>
+            <div className="mt-9 flex flex-wrap gap-3"><ButtonLink to="/programmes/cybersecurity" variant="secondary">Explore Cybersecurity</ButtonLink><ApplyButton onBlue /></div>
+            <p className="mt-7 text-sm text-navy/80">A Millennium Fellowship 2026 project aligned with SDG 4: Quality Education.</p>
           </div>
           <PhotoFrame name="hero" w={960} h={800} eager />
         </div>
