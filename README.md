@@ -51,13 +51,14 @@ Home `/`, About `/about`, Programmes `/programmes`, Cybersecurity `/programmes/c
 
 `vercel.json` includes an SPA fallback so direct navigation to nested routes works when deployed to Vercel. Use **Vite**, build command `pnpm build`, output directory `dist`. The project should also remain compatible with its Figma Make workflow, subject to testing.
 
-## Founder & contact
+## Organisation & contact
 
-Msugh F. Demkiir (Felix) · Millennium Fellow, 2026 · NUTM Lagos
+SkillSpark Bootcamp · A Millennium Fellowship 2026 project founded by Msugh F. Demkiir (Felix).
 
-- Email: felixdemkiir@gmail.com
-- LinkedIn: https://www.linkedin.com/in/msugh-felix-demkiir-cybersecurity-analyst/
-- GitHub: https://github.com/msugh1
+- Company LinkedIn: https://www.linkedin.com/company/skillspark-bootcamp/
+- Company email: To be announced (do not display a personal email address as the organisation's contact)
+
+The website's Contact page presents the company LinkedIn profile and a forthcoming official mailbox. The former mailto contact form remains removed until an official company email is supplied.
 
 ## Launch checklist
 

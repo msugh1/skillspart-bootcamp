@@ -26,7 +26,7 @@ export default function ApplyPage() {
             </p>
           </div>
           <p className="mt-6 text-sm text-muted">
-            Questions? Contact <a className="font-semibold text-navy underline decoration-spark underline-offset-4" href={"mailto:" + SITE_CONFIG.contactEmail}>{SITE_CONFIG.contactEmail}</a>.
+            Need an update? Visit our <Link to="/contact" className="font-semibold text-navy underline decoration-spark underline-offset-4">contact page</Link> for official SkillSpark channels.
           </p>
         </div>
         <div className="rounded-2xl border border-line bg-white p-7 shadow-sm sm:p-10">

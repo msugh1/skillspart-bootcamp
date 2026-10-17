@@ -31,15 +31,14 @@ const googleFormUrl = safeGoogleFormUrl(import.meta.env.VITE_GOOGLE_FORM_URL ?? 
 export const SITE_CONFIG: SiteConfig = {
   name: "SkillSpark Bootcamp",
   tagline: "Free, practical digital-skills learning for underserved Nigerian youth.",
-  contactEmail: "felixdemkiir@gmail.com",
+  contactEmail: "", // Company mailbox not yet available.
   phone: "",
   location: "",
   googleFormUrl,
   // Registration stays closed unless BOTH the URL and deliberate launch flag are set.
   applicationsOpen: import.meta.env.VITE_APPLICATIONS_OPEN === "true" && !!googleFormUrl,
   socials: [
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/msugh-felix-demkiir-cybersecurity-analyst/" },
-    { label: "GitHub", url: "https://github.com/msugh1" },
+    { label: "SkillSpark on LinkedIn", url: "https://www.linkedin.com/company/skillspark-bootcamp/" },
   ],
   logoSrc: "/brand/skillspark-logo.svg",
 };

@@ -31,9 +31,7 @@ export default function Footer() {
             {socials.map((s) => (
               <li key={s.url}><a href={s.url} target="_blank" rel="noreferrer" className="hover:text-navy">{s.label}</a></li>
             ))}
-            {!contactEmail && !phone && !location && socials.length === 0 && (
-              <li>Contact details coming soon. Use the <Link to="/contact" className="underline hover:text-navy">contact page</Link>.</li>
-            )}
+            {!contactEmail && <li className="text-sm">Company email coming soon</li>}
           </ul>
         </div>
       </div>
