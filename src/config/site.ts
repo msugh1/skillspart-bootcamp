@@ -3,6 +3,8 @@ export interface SiteConfig {
   tagline: string;
   contactEmail: string;
   applicationEndpoint: string;
+  phone?: string;
+  location?: string;
   applicationsOpen: boolean;
   socials: { label: string; url: string }[];
   logoSrc: string;
@@ -13,6 +15,8 @@ export const SITE_CONFIG: SiteConfig = {
   name: "SkillSpark Bootcamp",
   tagline: "Free, practical digital-skills learning for underserved Nigerian youth.",
   contactEmail: "felixdemkiir@gmail.com",
+  phone: "",
+  location: "",
   applicationEndpoint: validEndpoint ? applicationEndpoint : "",
   applicationsOpen: import.meta.env.VITE_APPLICATIONS_OPEN === "true" && validEndpoint,
   socials: [
