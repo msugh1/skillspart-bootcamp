@@ -1,6 +1,6 @@
 # SkillSpark Bootcamp
 
-**Free digital-skills education for underserved Nigerian youth.** A Millennium Fellowship 2026 project aligned with **SDG 4: Quality Education**, founded by Msugh F. Demkiir (Felix).
+**Free digital-skills education for underserved Nigerian youth.** A Millennium Fellowship 2026 project aligned with **SDG 4: Quality Education**, founded by Msugh Felix Demkiir.
 
 SkillSpark is designed as a **free 6–8 week online bootcamp** with a Cybersecurity inaugural track and planned IT Support and IT Automation tracks. The target audience includes learners **aged 16 and above**, including secondary-school and university students from underserved communities across Nigeria. Projected intake is 50–200 students per cohort, subject to capacity.
 
@@ -53,7 +53,7 @@ Home `/`, About `/about`, Programmes `/programmes`, Cybersecurity `/programmes/c
 
 ## Organisation & contact
 
-SkillSpark Bootcamp · A Millennium Fellowship 2026 project founded by Msugh F. Demkiir (Felix).
+SkillSpark Bootcamp · A Millennium Fellowship 2026 project founded by Msugh Felix Demkiir.
 
 - Company LinkedIn: https://www.linkedin.com/company/skillspark-bootcamp/
 - Company email: To be announced (do not display a personal email address as the organisation's contact)
