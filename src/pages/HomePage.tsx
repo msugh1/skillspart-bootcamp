@@ -27,7 +27,7 @@ export default function HomePage() {
           <div>
             <p className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-spark-dark"><span className="h-0.5 w-7 bg-spark" />SkillSpark Bootcamp</p>
             <h1 className="max-w-2xl text-4xl font-extrabold leading-[1.08] text-navy sm:text-5xl lg:text-6xl">Ignite your potential. <span className="text-spark-dark">Build skills for tomorrow.</span></h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">A free, 6–8 week online technology intensive created to help learners from underserved Nigerian communities develop practical, career-relevant digital skills.</p>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">A free, 6–8 week online technology intensive for learners aged 16 and above, focused on practical skills and opportunities for underserved Nigerian communities.</p>
             <div className="mt-9 flex flex-wrap gap-3"><ButtonLink to="/programmes/cybersecurity">Explore Cybersecurity</ButtonLink><ApplyButton /></div>
             <p className="mt-7 text-sm text-muted">A Millennium Fellowship 2026 project aligned with SDG 4: Quality Education.</p>
           </div>
@@ -67,23 +67,21 @@ export default function HomePage() {
       <section className="border-t border-line bg-white px-5 py-20 sm:px-8 sm:py-24">
         <div className="mx-auto grid max-w-7xl items-start gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
-            <SectionHeading eyebrow="Partner-enabled learning" title="A pathway to Google's Cybersecurity Professional Certificate">
-              Through a partnership with IT Experience, SkillSpark plans to provide selected learners access to the Google Cybersecurity Professional Certificate on Coursera.
+            <SectionHeading eyebrow="Certificate pathway" title="Learn cybersecurity with Google on Coursera">
+              Eligible SkillSpark learners will have the opportunity to access the Google Cybersecurity Professional Certificate courses on Coursera.
             </SectionHeading>
-            <p className="mt-5 max-w-2xl leading-relaxed text-muted">
-              This is separate from the 6–8 week SkillSpark intensive. Learners earn the official Google credential by completing the full certificate requirements on Coursera, which may take longer than the bootcamp. Access details and available places will be shared before enrollment.
-            </p>
-            <a href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex min-h-11 items-center border-b-2 border-spark font-bold text-navy hover:text-spark-dark">Explore the Google certificate <span className="sr-only">(opens Coursera in a new tab)</span></a>
+            <p className="mt-5 max-w-2xl leading-relaxed text-muted">The full Coursera certificate programme is separate from SkillSpark's 6–8 week intensive. Earning Google's official credential requires completing all course requirements and may take longer than the bootcamp.</p>
+            <a href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex min-h-11 items-center border-b-2 border-spark font-bold text-navy hover:text-spark-dark">Explore the certificate course <span className="sr-only">(opens Coursera in a new tab)</span></a>
           </div>
           <div className="rounded-2xl border border-line bg-mist p-8">
-            <h3 className="text-xl font-bold">What learners can work toward</h3>
+            <h3 className="text-xl font-bold">A practical learning pathway</h3>
             <ul className="mt-5 space-y-3 text-ink">
-              <li>• Practical cybersecurity fundamentals</li>
+              <li>• Beginner-focused cybersecurity foundations</li>
               <li>• A structured online learning community</li>
-              <li>• Partner-supported access for eligible learners</li>
-              <li>• The opportunity to complete a recognised Google credential</li>
+              <li>• Coursera course access for eligible learners</li>
+              <li>• An opportunity to earn a recognised Google credential</li>
             </ul>
-            <p className="mt-5 text-sm text-muted">Certificate issuance is determined by Google/Coursera upon successful course completion, not by SkillSpark registration.</p>
+            <p className="mt-5 text-sm text-muted">Enrolling in SkillSpark does not automatically award the Google certificate.</p>
           </div>
         </div>
       </section>

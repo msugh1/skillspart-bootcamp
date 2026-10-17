@@ -15,13 +15,13 @@ export default function ApplyPage() {
           <p className="mb-4 text-xs font-bold uppercase tracking-widest text-spark-dark">First intake · Cybersecurity only</p>
           <h2 className="text-3xl font-bold text-navy">Learn skills that create possibilities.</h2>
           <p className="mt-4 leading-relaxed text-muted">
-            SkillSpark prioritises secondary-school and university learners from underserved communities in Nigeria.
+            SkillSpark welcomes eligible learners aged 16 and above, including secondary-school and university students from underserved communities in Nigeria.
             You'll need basic internet access and a smartphone or laptop. Exact cohort dates and available places will be announced.
           </p>
           <div className="mt-8 rounded-2xl border border-line bg-mist p-6">
             <h3 className="flex items-center gap-2 font-bold text-navy"><ShieldCheck size={20} aria-hidden /> A safe, free application</h3>
             <p className="mt-3 text-sm leading-relaxed text-ink">
-              There is no tuition fee or application payment. Applicants under 18 will require appropriate parent or guardian permission.
+              There is no tuition fee or application payment. Applications are intended for learners aged 16 and above.
               Never provide passwords, payment details or identity documents in an application.
             </p>
           </div>
