@@ -1,4 +1,4 @@
-import { ArrowUpRight, Linkedin, Mail } from "lucide-react";
+import { ArrowUpRight, Globe, Mail } from "lucide-react";
 import Accordion from "../components/ui/Accordion";
 import PageHero from "../components/ui/PageHero";
 import SectionHeading from "../components/ui/SectionHeading";
@@ -15,7 +15,7 @@ export default function ContactPage() {
       <section className="mx-auto grid max-w-7xl gap-6 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-2">
         <div className="rounded-2xl border border-line bg-mist p-7 sm:p-10">
           <span className="mb-6 grid size-12 place-items-center rounded-xl bg-spark text-navy">
-            <Linkedin size={24} aria-hidden />
+            <Globe size={24} aria-hidden />
           </span>
           <h2 className="text-2xl font-bold text-navy">Our official LinkedIn page</h2>
           <p className="mt-3 max-w-lg leading-relaxed text-ink">
