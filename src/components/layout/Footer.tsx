@@ -5,7 +5,6 @@ import Logo from "./Logo";
 import { NAV } from "./nav";
 
 export default function Footer() {
-  const { contactEmail, phone, location, socials } = SITE_CONFIG;
   const credits = [...new Set((Object.values(MEDIA) as Media[]).map((m) => m.credit).filter(Boolean))].join(", ");
   return (
     <footer className="border-t border-line bg-white">
@@ -24,14 +23,19 @@ export default function Footer() {
         </nav>
         <div>
           <h2 className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-navy">Contact</h2>
-          <ul className="space-y-2 text-muted">
-            {contactEmail && <li><a href={`mailto:${contactEmail}`} className="hover:text-navy">{contactEmail}</a></li>}
-            {phone && <li>{phone}</li>}
-            {location && <li>{location}</li>}
-            {socials.map((s) => (
-              <li key={s.url}><a href={s.url} target="_blank" rel="noreferrer" className="hover:text-navy">{s.label}</a></li>
-            ))}
-            {!contactEmail && <li className="text-sm">Company email coming soon</li>}
+          <ul className="space-y-3 text-muted">
+            <li>
+              <a
+                href="https://www.linkedin.com/company/skillspark-bootcamp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-9 items-center font-medium text-navy underline decoration-spark underline-offset-4 hover:text-spark-dark"
+              >
+                SkillSpark on LinkedIn
+                <span className="sr-only">(opens in a new tab)</span>
+              </a>
+            </li>
+            <li className="text-sm">Company email coming soon</li>
           </ul>
         </div>
       </div>
