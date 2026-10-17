@@ -47,7 +47,7 @@ export default function CybersecurityPage() {
       <section className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2">
         <div>
           <SectionHeading eyebrow="Learning together" title="Structured, supported and online">Google Classroom, Google Meet and WhatsApp are the planned learning and communication tools, alongside sessions with industry guests and peer accountability.</SectionHeading>
-          <p className="mt-5 text-sm text-muted">Guest sessions, mentoring allocations and certificate opportunities depend on the final cohort arrangements and supporting organisations.</p>
+          <p className="mt-5 text-sm text-muted">Guest sessions and mentor allocations depend on the final cohort arrangements. Google certificate access for selected learners is being organised through IT Experience.</p>
         </div>
         <div className="rounded-2xl border border-line bg-white p-8">
           <h3 className="text-xl font-bold">Who should consider applying?</h3>
@@ -56,6 +56,25 @@ export default function CybersecurityPage() {
             <li className="flex gap-3"><Laptop className="shrink-0 text-spark-dark" size={20} />Motivated beginners with access to a smartphone or laptop</li>
             <li className="flex gap-3"><Wifi className="shrink-0 text-spark-dark" size={20} />Learners with basic internet access and time for the intensive</li>
           </ul>
+        </div>
+      </section>
+      <section className="border-t border-line bg-white px-5 py-16 sm:px-8 sm:py-24">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeading eyebrow="Certification pathway" title="Learn with Google through Coursera">
+            SkillSpark reports a partnership with IT Experience supporting access to the Google Cybersecurity Professional Certificate on Coursera for selected learners.
+          </SectionHeading>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-line bg-mist p-7">
+              <h3 className="text-xl font-bold">SkillSpark intensive</h3>
+              <p className="mt-3 leading-relaxed text-muted">Free, online, 6–8 weeks of structured activities and peer learning. The detailed cohort timetable will be confirmed.</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-white p-7">
+              <h3 className="text-xl font-bold">Google Professional Certificate</h3>
+              <p className="mt-3 leading-relaxed text-muted">A distinct, self-paced Coursera certificate programme. The official credential requires successful completion of all course requirements and may take longer than the bootcamp.</p>
+            </div>
+          </div>
+          <p className="mt-6 text-sm text-muted">Partner allocation, eligibility and access duration will be confirmed before enrollment. SkillSpark does not issue Google's credential.</p>
+          <a className="mt-4 inline-flex min-h-11 items-center font-bold text-navy underline decoration-spark underline-offset-4" href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" rel="noopener noreferrer">View the official Coursera programme <span className="sr-only">(opens in a new tab)</span></a>
         </div>
       </section>
       <section className="mx-auto max-w-3xl px-5 py-16 sm:px-8 sm:py-24"><SectionHeading eyebrow="FAQs" title="Questions about Cybersecurity" /><div className="mt-8"><Accordion items={CYBER_FAQS} /></div></section>

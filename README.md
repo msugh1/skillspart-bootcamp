@@ -8,7 +8,7 @@ SkillSpark is designed as a **free 6–8 week online bootcamp** with a Cybersecu
 
 The project plans to use Google Classroom for modules, Google Meet for practical sessions, WhatsApp for peer community, and guest expert sessions and follow-up mentorship where available.
 
-**Important:** Exact cohort dates, finalized lesson plans, certification access and partners have not yet been announced. Certificates from external platforms depend on their respective requirements. No Coursera sponsorship or other partnership is claimed as confirmed.
+**Partner-supported learning:** The founder reports a partnership with **IT Experience** for learner access to the [Google Cybersecurity Professional Certificate on Coursera](https://www.coursera.org/professional-certificates/google-cybersecurity). Eligibility, seat allocation, access duration and branding permissions must be confirmed before public enrollment. Completion of the full Coursera course requirements is necessary for the official Google certificate; the 6–8 week bootcamp alone does not issue it.
 
 ## Technology
 
@@ -31,17 +31,17 @@ pnpm typecheck
 pnpm build
 ```
 
-## Applicant intake (disabled by default)
+## Applicant intake — Google Forms (closed by default)
 
-The `/apply` page is public, but **does not collect data** while applications are closed. To activate after your data handling review:
+The \`/apply\` page does not collect applicant details. Registration is **closed** until the intake is approved and a link to an official public Google Form is configured.
 
-1. Create and configure a **Formspree** form endpoint and review its inbox access, spam control, data retention, privacy obligations and consent language.
-2. Copy `sample.env` to `.env.local` locally, or add the same values in your hosting provider's environment settings.
-3. Set `VITE_APPLICATION_ENDPOINT=https://formspree.io/f/YOUR_FORM_ID` using a real Formspree form ID.
-4. Only after confirming intake readiness and safeguarding for under-18 applicants, set `VITE_APPLICATIONS_OPEN=true`.
-5. Perform an end-to-end test submission and verify receipt before sharing the application link.
+Read [Google Form configuration and safeguarding checklist](docs/google-form-setup.md). The form must be set up and approved separately in a SkillSpark-controlled Google account.
 
-**Security:** Vite `VITE_*` values are public in browser bundles. Never put API keys, secrets or private access tokens in them. Email, age group and optional application information are transmitted to Formspree when enabled. Application intake requires an approved privacy/retention policy before launch. Frontend validation is not a substitute for server-side validation.
+1. Set \`VITE_GOOGLE_FORM_URL\` to the respondent-facing Google Form link (e.g. \`https://forms.gle/...\` or \`https://docs.google.com/forms/d/e/.../viewform\`).
+2. Keep \`VITE_APPLICATIONS_OPEN=false\` while you verify eligibility, under-18 guardian permission, data privacy/retention, form permissions and partner access terms.
+3. When ready, set \`VITE_APPLICATIONS_OPEN=true\`, redeploy, and check that the form opens correctly on mobile and desktop and is accepting responses.
+
+**Security:** Vite \`VITE_*\` values are embedded in the client bundle. Never put API keys, personal information or access tokens in them. The website only redirects; Google Forms handles any responses. The form owner must control its response data.
 
 ## Pages
 
@@ -62,9 +62,10 @@ Msugh F. Demkiir (Felix) · Millennium Fellow, 2026 · NUTM Lagos
 ## Launch checklist
 
 - [ ] Approve curriculum, 6–8 week delivery plan and confirmed intake dates
-- [ ] Confirm facilitators, mentor availability, certificate conditions and learning platforms
+- [ ] Confirm IT Experience's public name, branding permission, sponsored Google certificate seats, eligibility, access duration and under-18 platform requirements
+- [ ] Confirm facilitators, mentor availability and cohort delivery dates
 - [ ] Approve under-18 safeguarding and data privacy/retention policy
-- [ ] Set and test Formspree endpoint; open intake only afterward
+- [ ] Create, privacy-review and test the Google Form including parent/guardian workflow; only then enable the form link
 - [ ] Verify CI passes: typecheck and production build
 - [ ] Manually test mobile navigation, forms, reduced-motion accessibility and direct-route refresh
 - [ ] Review real-device photography, content accuracy and deployment URL

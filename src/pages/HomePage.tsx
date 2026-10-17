@@ -64,6 +64,29 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <section className="border-t border-line bg-white px-5 py-20 sm:px-8 sm:py-24">
+        <div className="mx-auto grid max-w-7xl items-start gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <div>
+            <SectionHeading eyebrow="Partner-enabled learning" title="A pathway to Google's Cybersecurity Professional Certificate">
+              Through a partnership with IT Experience, SkillSpark plans to provide selected learners access to the Google Cybersecurity Professional Certificate on Coursera.
+            </SectionHeading>
+            <p className="mt-5 max-w-2xl leading-relaxed text-muted">
+              This is separate from the 6–8 week SkillSpark intensive. Learners earn the official Google credential by completing the full certificate requirements on Coursera, which may take longer than the bootcamp. Access details and available places will be shared before enrollment.
+            </p>
+            <a href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex min-h-11 items-center border-b-2 border-spark font-bold text-navy hover:text-spark-dark">Explore the Google certificate <span className="sr-only">(opens Coursera in a new tab)</span></a>
+          </div>
+          <div className="rounded-2xl border border-line bg-mist p-8">
+            <h3 className="text-xl font-bold">What learners can work toward</h3>
+            <ul className="mt-5 space-y-3 text-ink">
+              <li>• Practical cybersecurity fundamentals</li>
+              <li>• A structured online learning community</li>
+              <li>• Partner-supported access for eligible learners</li>
+              <li>• The opportunity to complete a recognised Google credential</li>
+            </ul>
+            <p className="mt-5 text-sm text-muted">Certificate issuance is determined by Google/Coursera upon successful course completion, not by SkillSpark registration.</p>
+          </div>
+        </div>
+      </section>
       <section className="border-t border-line px-5 py-20 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow="The learning journey" title="From interest to practical skills" />
