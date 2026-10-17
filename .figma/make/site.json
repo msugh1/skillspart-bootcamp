@@ -1,0 +1,10 @@
+{
+  "description": "Empower students with practical digital skills through a modern, responsive platform focused on cybersecurity and future tech programs.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
