@@ -37,9 +37,7 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-40 border-b transition-colors duration-300 ${
-        scrolled ? "border-navy/10 bg-spark shadow-sm" : "border-line bg-white"
-      }`}
+      className={`sticky top-0 z-40 border-b border-navy/10 bg-spark transition-shadow duration-300 ${scrolled ? "shadow-sm" : ""}`}
     >
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-5 sm:px-8">
         <Link reloadDocument to="/" aria-label="SkillSpark Bootcamp home" className="shrink-0">
@@ -53,7 +51,7 @@ export default function Header() {
         <div className="hidden lg:block"><ApplyButton onBlue /></div>
         <button
           type="button"
-          className={`grid size-11 place-items-center rounded-full text-navy lg:hidden ${scrolled ? "hover:bg-white/30" : "hover:bg-navy/5"}`}
+          className="grid size-11 place-items-center rounded-full text-navy hover:bg-white/30 lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
