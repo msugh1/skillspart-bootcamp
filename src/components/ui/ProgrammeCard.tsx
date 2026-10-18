@@ -6,7 +6,7 @@ import PhotoFrame from "./PhotoFrame";
 export default function ProgrammeCard({ p, featured = false }: { p: Programme; featured?: boolean }) {
   if (!featured) {
     return (
-      <div className="flex h-full flex-col rounded-xl border border-line bg-white p-6">
+      <div className="flex h-full flex-col rounded-xl border border-line bg-white p-6 transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-spark/70 hover:shadow-md motion-reduce:transform-none motion-reduce:transition-none">
         <span className="w-fit rounded-full bg-mist px-3 py-1 text-xs font-bold text-navy">Coming next</span>
         <h3 className="mt-4 text-xl font-bold">{p.title}</h3>
         <p className="mt-2 text-muted">{p.summary}</p>
@@ -25,7 +25,7 @@ export default function ProgrammeCard({ p, featured = false }: { p: Programme; f
     { Icon: Signal, v: p.level },
   ];
   return (
-    <article className="grid overflow-hidden rounded-2xl border border-line bg-white lg:grid-cols-2">
+    <article className="grid overflow-hidden rounded-2xl border border-line bg-white transition-shadow duration-300 hover:shadow-lg motion-reduce:transition-none lg:grid-cols-2">
       {p.image && <PhotoFrame name={p.image} w={900} h={760} className="!rounded-none lg:h-full" />}
       <div className="flex flex-col justify-center p-6 sm:p-10">
         <span className="w-fit rounded-full bg-spark px-3 py-1 text-xs font-bold text-navy">{p.eyebrow}</span>
@@ -42,8 +42,8 @@ export default function ProgrammeCard({ p, featured = false }: { p: Programme; f
           ))}
         </ul>
         {p.href && (
-          <Link reloadDocument to={p.href} className="mt-7 inline-flex min-h-11 w-fit items-center gap-2 border-b-2 border-spark font-bold text-navy hover:text-spark-dark">
-            View programme details <ArrowRight size={18} aria-hidden />
+          <Link reloadDocument to={p.href} className="group mt-7 inline-flex min-h-11 w-fit items-center gap-2 border-b-2 border-spark font-bold text-navy hover:text-spark-dark">
+            View programme details <ArrowRight size={18} aria-hidden className="transition-transform duration-200 group-hover:translate-x-1 motion-reduce:transform-none motion-reduce:transition-none" />
           </Link>
         )}
       </div>
