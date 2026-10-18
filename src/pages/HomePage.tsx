@@ -22,7 +22,7 @@ const steps = [
 export default function HomePage() {
   return (
     <>
-      <div className="border-b border-navy/10 bg-spark px-5 py-3 text-center text-xs font-bold text-navy sm:text-sm">Free digital-skills bootcamp · Inaugural Cybersecurity intake in preparation</div>
+      <div className="border-b border-line bg-white px-5 py-3 text-center text-xs font-bold text-navy sm:text-sm">Free digital-skills bootcamp · Inaugural Cybersecurity intake in preparation</div>
       <section className="relative isolate overflow-hidden border-b border-navy/10 bg-spark">
         {/* The existing hero photo fills the section instead of sitting in a separate column. */}
         <img
