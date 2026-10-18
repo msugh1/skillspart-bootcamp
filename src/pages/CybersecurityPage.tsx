@@ -1,4 +1,5 @@
-import { BookOpen, Cpu, KeyRound, Laptop, Network, ShieldAlert, ShieldCheck, Users, Wifi } from "lucide-react";
+import { BookOpen, ChevronDown, Cpu, KeyRound, Laptop, Network, ShieldAlert, ShieldCheck, Users, Wifi } from "lucide-react";
+import { useState } from "react";
 import Accordion from "../components/ui/Accordion";
 import ApplyButton from "../components/ui/ApplyButton";
 import CallToAction from "../components/ui/CallToAction";
@@ -17,6 +18,8 @@ const topics = [
   { icon: BookOpen, title: "Further pathways", body: "Discover certificates and next steps, where available." },
 ];
 export default function CybersecurityPage() {
+  const [expandedWeek, setExpandedWeek] = useState<number | null>(1);
+
   return (
     <>
       <section className="border-b border-line bg-white">
@@ -42,7 +45,58 @@ export default function CybersecurityPage() {
       <section className="bg-mist px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <SectionHeading eyebrow="Six-week curriculum" title="Learn with Google on Coursera">Our suggested six-week learning plan follows the Google Cybersecurity Professional Certificate courses on Coursera. Each week includes independent coursework and a SkillSpark live learning session. This is SkillSpark’s pacing guide, not Coursera’s official timetable.</SectionHeading>
-          <ol className="mt-10 space-y-4">{CURRICULUM.map((topic, index) => <li key={topic.title}><Reveal><div className="flex gap-5 rounded-2xl border border-line bg-white p-6"><span className="font-bold text-spark-dark">{String(index + 1).padStart(2, "0")}</span><div><h3 className="text-lg font-bold">{topic.title}</h3><p className="mt-2 text-sm font-semibold text-navy">{topic.courses}</p><p className="mt-2 text-muted">{topic.body}</p><p className="mt-3 text-sm text-spark-dark"><strong>Weekly live session:</strong> {topic.live}</p></div></div></Reveal></li>)}</ol>
+          <p className="mt-5 text-sm text-muted">Choose any week to explore its Coursera coursework and live session.</p>
+          <ol className="mt-8 space-y-3">
+            {CURRICULUM.map((topic) => {
+              const isOpen = expandedWeek === topic.week;
+              const detailsId = `curriculum-week-${topic.week}`;
+              return (
+                <li key={topic.week}>
+                  <div className={`overflow-hidden rounded-2xl border bg-white transition-[border-color,box-shadow] duration-200 ${isOpen ? "border-spark shadow-md" : "border-line hover:border-spark/60"}`}>
+                    <h3>
+                      <button
+                        type="button"
+                        aria-expanded={isOpen}
+                        aria-controls={detailsId}
+                        onClick={() => setExpandedWeek(isOpen ? null : topic.week)}
+                        className="group flex w-full items-center gap-4 px-5 py-5 text-left sm:gap-5 sm:px-6"
+                      >
+                        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-mist text-sm font-extrabold text-spark-dark">
+                          {String(topic.week).padStart(2, "0")}
+                        </span>
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-xs font-bold uppercase tracking-wider text-spark-dark">Week {topic.week}</span>
+                          <span className="mt-1 block text-base font-bold text-navy sm:text-lg">{topic.title}</span>
+                        </span>
+                        <ChevronDown
+                          size={21}
+                          aria-hidden="true"
+                          className={`shrink-0 text-navy transition-transform duration-200 group-hover:text-spark-dark motion-reduce:transition-none ${isOpen ? "rotate-180" : ""}`}
+                        />
+                      </button>
+                    </h3>
+                    <div
+                      id={detailsId}
+                      role="region"
+                      aria-label={`Week ${topic.week} details`}
+                      aria-hidden={!isOpen}
+                      className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-300 motion-reduce:transition-none ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+                    >
+                      <div className="min-h-0 overflow-hidden">
+                        <div className="space-y-3 border-t border-line px-5 pb-6 pt-4 sm:px-6">
+                          <p className="text-sm font-semibold text-navy">{topic.courses}</p>
+                          <p className="leading-relaxed text-muted">{topic.body}</p>
+                          <div className="rounded-xl bg-mist px-4 py-3 text-sm text-ink">
+                            <strong className="text-navy">Weekly live session:</strong> {topic.live}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
         </div>
       </section>
       <section className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2">
