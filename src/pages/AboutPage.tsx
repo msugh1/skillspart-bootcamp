@@ -35,7 +35,7 @@ export default function AboutPage() {
             Many young Nigerians want to learn technology but don't have easy access to structured courses, practical experience or people who can guide them.
           </SectionHeading>
           <p className="mt-4 text-lg leading-relaxed text-muted">
-            I founded SkillSpark to make that learning more accessible. I'm Msugh Felix Demkiir, a Millennium Fellow and cybersecurity student at NUTM Lagos. Through free online training, I want more young people to have a practical place to start.
+            I founded SkillSpark to make that learning more accessible. I'm Msugh Felix Demkiir, a Millennium Fellow and cybersecurity student at NUTM Lagos. Through Coursera-based learning, live weekly sessions and an accessible community, I want more young people to have a practical place to start.
           </p>
         </Reveal>
         <Reveal delay={0.1}><PhotoFrame name="lab" w={900} h={700} /></Reveal>
