@@ -22,7 +22,7 @@ const steps = [
 export default function HomePage() {
   return (
     <>
-      <div className="border-b border-line bg-white px-5 py-3 text-center text-xs font-bold text-navy sm:text-sm">Free digital-skills bootcamp · Inaugural Cybersecurity intake in preparation</div>
+      <div className="border-b border-navy/10 bg-spark px-5 py-3 text-center text-xs font-bold text-navy sm:text-sm">Free digital-skills bootcamp · Inaugural Cybersecurity intake in preparation</div>
       <section className="relative isolate overflow-hidden border-b border-navy/10 bg-spark">
         {/* The existing hero photo fills the section instead of sitting in a separate column. */}
         <img
@@ -35,12 +35,12 @@ export default function HomePage() {
           fetchPriority="high"
           decoding="async"
           style={{ objectPosition: MEDIA.hero.pos }}
-          className="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover opacity-50"
+          className="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover opacity-75"
         />
         {/* Preserve the electric-blue identity and protect text contrast on small screens. */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 bg-spark/55 sm:bg-gradient-to-r sm:from-spark/90 sm:via-spark/65 sm:to-spark/10"
+          className="pointer-events-none absolute inset-0 -z-10 bg-spark/40 sm:bg-gradient-to-r sm:from-spark/75 sm:via-spark/40 sm:to-spark/10"
         />
         <div className="relative mx-auto flex min-h-[34rem] max-w-7xl items-center px-5 py-16 sm:min-h-[38rem] sm:px-8 sm:py-20 lg:min-h-[42rem] lg:py-28">
           <div className="w-full max-w-3xl">
