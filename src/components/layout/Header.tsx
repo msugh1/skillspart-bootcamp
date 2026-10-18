@@ -1,5 +1,4 @@
 import { Menu, X } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import ApplyButton from "../ui/ApplyButton";
@@ -49,14 +48,10 @@ export default function Header() {
           {open ? <X aria-hidden /> : <Menu aria-hidden />}
         </button>
       </div>
-      <AnimatePresence>
+      
         {open && (
-          <motion.div
+          <div
             id="mobile-nav"
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.2 }}
             className="fixed inset-x-0 top-18 bottom-0 overflow-y-auto bg-white px-5 py-6 lg:hidden"
           >
             <nav aria-label="Mobile" className="flex flex-col">
@@ -72,9 +67,9 @@ export default function Header() {
               ))}
             </nav>
             <div className="mt-6"><ApplyButton className="w-full" /></div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
+      
     </header>
   );
 }
