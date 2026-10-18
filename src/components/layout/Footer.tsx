@@ -17,7 +17,7 @@ export default function Footer() {
           <h2 className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-navy">Explore</h2>
           <ul className="space-y-1">
             {NAV.map((n) => (
-              <li key={n.to}><Link to={n.to} className="inline-flex min-h-9 items-center text-muted hover:text-navy">{n.label}</Link></li>
+              <li key={n.to}><Link reloadDocument to={n.to} className="inline-flex min-h-9 items-center text-muted hover:text-navy">{n.label}</Link></li>
             ))}
           </ul>
         </nav>
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-line px-5 py-6 text-center text-xs text-muted sm:px-8">
-        © {new Date().getFullYear()} SkillSpark Bootcamp. A Millennium Fellowship project · SDG 4. <Link to="/privacy" className="underline hover:text-navy">Privacy</Link>. {credits && <>Photography by {credits} on Unsplash.</>}
+        © {new Date().getFullYear()} SkillSpark Bootcamp. A Millennium Fellowship project · SDG 4. <Link reloadDocument to="/privacy" className="underline hover:text-navy">Privacy</Link>. {credits && <>Photography by {credits} on Unsplash.</>}
       </div>
     </footer>
   );
