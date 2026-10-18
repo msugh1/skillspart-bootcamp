@@ -8,7 +8,7 @@ export default function ApplyPage() {
   return (
     <>
       <PageHero eyebrow="Applications" title="Take the first step.">
-        SkillSpark is preparing a free, 6–8 week online intensive for Nigerian students from underserved communities.
+        SkillSpark is preparing a free, six-week online Cybersecurity Bootcamp built around Google’s courses on Coursera and weekly live sessions for Nigerian students from underserved communities.
       </PageHero>
       <section className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:py-24">
         <div>
@@ -16,7 +16,7 @@ export default function ApplyPage() {
           <h2 className="text-3xl font-bold text-navy">Learn skills that create possibilities.</h2>
           <p className="mt-4 leading-relaxed text-muted">
             SkillSpark welcomes eligible learners aged 16 and above, including secondary-school and university students from underserved communities in Nigeria.
-            You'll need basic internet access and a smartphone or laptop. Exact cohort dates and available places will be announced.
+            You'll need dependable internet access, a smartphone or laptop, and time for independent Coursera coursework alongside the weekly live sessions. Exact cohort dates and places will be announced.
           </p>
           <div className="mt-8 rounded-2xl border border-line bg-mist p-6">
             <h3 className="flex items-center gap-2 font-bold text-navy"><ShieldCheck size={20} aria-hidden /> A safe, free application</h3>
