@@ -42,7 +42,7 @@ export default function ProgrammeCard({ p, featured = false }: { p: Programme; f
           ))}
         </ul>
         {p.href && (
-          <Link to={p.href} className="mt-7 inline-flex min-h-11 w-fit items-center gap-2 border-b-2 border-spark font-bold text-navy hover:text-spark-dark">
+          <Link reloadDocument to={p.href} className="mt-7 inline-flex min-h-11 w-fit items-center gap-2 border-b-2 border-spark font-bold text-navy hover:text-spark-dark">
             View programme details <ArrowRight size={18} aria-hidden />
           </Link>
         )}
