@@ -7,6 +7,7 @@ import ProgrammeCard from "../components/ui/ProgrammeCard";
 import Reveal from "../components/ui/Reveal";
 import SectionHeading from "../components/ui/SectionHeading";
 import { CYBER, PROGRAMMES } from "../data/programmes";
+import { img, MEDIA } from "../data/media";
 const principles = [
   { Icon: GraduationCap, title: "No tuition fees", body: "The programme is designed to be free for selected learners." },
   { Icon: BookOpenCheck, title: "Relevant skills", body: "Foundational training in cybersecurity and wider IT pathways." },
@@ -22,16 +23,45 @@ export default function HomePage() {
   return (
     <>
       <div className="border-b border-navy/10 bg-spark px-5 py-3 text-center text-xs font-bold text-navy sm:text-sm">Free digital-skills bootcamp · Inaugural Cybersecurity intake in preparation</div>
-      <section className="border-b border-navy/10 bg-spark">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:py-28">
-          <div>
-            <p className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-navy"><span className="h-0.5 w-7 bg-navy" />SkillSpark Bootcamp</p>
-            <h1 className="max-w-2xl text-4xl font-extrabold leading-[1.08] text-navy sm:text-5xl lg:text-6xl">Ignite your potential. <span className="text-navy">Build skills for tomorrow.</span></h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-navy/85">A free, six-week online technology intensive for learners aged 16 and above, focused on practical skills and opportunities for underserved Nigerian communities.</p>
-            <div className="mt-9 flex flex-wrap gap-3"><ButtonLink to="/programmes/cybersecurity" variant="secondary">Explore Cybersecurity</ButtonLink><ApplyButton onBlue /></div>
-            <p className="mt-7 text-sm text-navy/80">A Millennium Fellowship 2026 project aligned with SDG 4: Quality Education.</p>
+      <section className="relative isolate overflow-hidden border-b border-navy/10 bg-spark">
+        {/* The existing hero photo fills the section instead of sitting in a separate column. */}
+        <img
+          src={img("hero", 1920, 1080)}
+          alt=""
+          aria-hidden="true"
+          width={1920}
+          height={1080}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          style={{ objectPosition: MEDIA.hero.pos }}
+          className="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover opacity-50"
+        />
+        {/* Preserve the electric-blue identity and protect text contrast on small screens. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 bg-spark/55 sm:bg-gradient-to-r sm:from-spark/90 sm:via-spark/65 sm:to-spark/10"
+        />
+        <div className="relative mx-auto flex min-h-[34rem] max-w-7xl items-center px-5 py-16 sm:min-h-[38rem] sm:px-8 sm:py-20 lg:min-h-[42rem] lg:py-28">
+          <div className="w-full max-w-3xl">
+            <p className="mb-5 flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.14em] text-navy sm:text-xs sm:tracking-widest">
+              <span className="h-0.5 w-7 shrink-0 bg-navy" aria-hidden="true" />
+              SkillSpark Bootcamp
+            </p>
+            <h1 className="max-w-3xl text-[clamp(2.35rem,7vw,4.25rem)] font-extrabold leading-[1.08] text-navy">
+              Ignite your potential. Build skills for tomorrow.
+            </h1>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-navy/90 sm:text-lg">
+              A free, six-week online technology intensive for learners aged 16 and above, focused on practical skills and opportunities for underserved Nigerian communities.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap">
+              <ButtonLink to="/programmes/cybersecurity" variant="secondary" className="w-full sm:w-auto">Explore Cybersecurity</ButtonLink>
+              <ApplyButton onBlue className="w-full sm:w-auto" />
+            </div>
+            <p className="mt-7 max-w-xl text-xs leading-relaxed text-navy/85 sm:text-sm">
+              A Millennium Fellowship 2026 project aligned with SDG 4: Quality Education.
+            </p>
           </div>
-          <PhotoFrame name="hero" w={960} h={800} eager />
         </div>
       </section>
       <section className="px-5 py-20 sm:px-8 sm:py-24">
