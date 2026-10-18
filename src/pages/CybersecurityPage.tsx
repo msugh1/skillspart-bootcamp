@@ -61,12 +61,12 @@ export default function CybersecurityPage() {
       </section>
       <section className="border-t border-line bg-white px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-7xl">
-          <SectionHeading eyebrow="Certificate pathway" title="Google Cybersecurity Certificate on Coursera">
+          <SectionHeading eyebrow="Certificate pathway" title="Our Coursera learning pathway">
             Coursera is the primary learning platform throughout the SkillSpark bootcamp. The weekly live sessions provide an additional layer of explanation, discussion and practical support.
           </SectionHeading>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="rounded-2xl border border-line bg-mist p-7"><h3 className="text-xl font-bold">SkillSpark intensive</h3><p className="mt-3 leading-relaxed text-muted">Six weeks of Coursera study, with weekly SkillSpark live sessions and a supportive learning community.</p></div>
-            <div className="rounded-2xl border border-line bg-white p-7"><h3 className="text-xl font-bold">Google Professional Certificate</h3><p className="mt-3 leading-relaxed text-muted">A separate Coursera programme requiring successful completion of all official coursework to earn Google's credential.</p></div>
+            <div className="rounded-2xl border border-line bg-white p-7"><h3 className="text-xl font-bold">Google Professional Certificate</h3><p className="mt-3 leading-relaxed text-muted">The official Google credential is earned by completing Coursera's full course and assessment requirements, not by attending SkillSpark alone.</p></div>
           </div>
           <p className="mt-6 text-sm text-muted">This is an ambitious six-week schedule. Coursera typically allows months for the complete certificate, so some learners may need to continue after the SkillSpark cohort. Joining the bootcamp does not guarantee a Google certificate.</p>
           <a className="mt-4 inline-flex min-h-11 items-center font-bold text-navy underline decoration-spark underline-offset-4" href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" rel="noopener noreferrer">View the official Coursera programme <span className="sr-only">(opens in a new tab)</span></a>
