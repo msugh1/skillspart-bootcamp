@@ -15,7 +15,7 @@ export const buttonClasses = (variant: Variant = "primary") =>
 
 export default function ButtonLink({ to, children, variant = "primary", className = "" }: { to: string; children: ReactNode; variant?: Variant; className?: string }) {
   return (
-    <Link to={to} className={`${buttonClasses(variant)} ${className}`}>
+    <Link reloadDocument to={to} className={`${buttonClasses(variant)} ${className}`}>
       {children}
     </Link>
   );
