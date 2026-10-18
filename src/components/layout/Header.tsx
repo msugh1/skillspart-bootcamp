@@ -11,9 +11,18 @@ const link = ({ isActive }: { isActive: boolean }) =>
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { pathname } = useLocation();
 
   useEffect(() => setOpen(false), [pathname]);
+
+  useEffect(() => {
+    const updateHeader = () => setScrolled(window.scrollY > 24);
+    updateHeader();
+
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    return () => window.removeEventListener("scroll", updateHeader);
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -27,7 +36,11 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-navy/10 bg-spark">
+    <header
+      className={`sticky top-0 z-40 border-b transition-colors duration-300 ${
+        scrolled ? "border-navy/10 bg-spark shadow-sm" : "border-line bg-white"
+      }`}
+    >
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-5 sm:px-8">
         <Link reloadDocument to="/" aria-label="SkillSpark Bootcamp home" className="shrink-0">
           <Logo className="h-8 sm:h-9" />
@@ -40,7 +53,7 @@ export default function Header() {
         <div className="hidden lg:block"><ApplyButton onBlue /></div>
         <button
           type="button"
-          className="grid size-11 place-items-center rounded-full text-navy hover:bg-white/30 lg:hidden"
+          className={`grid size-11 place-items-center rounded-full text-navy lg:hidden ${scrolled ? "hover:bg-white/30" : "hover:bg-navy/5"}`}
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
