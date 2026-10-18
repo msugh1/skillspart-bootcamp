@@ -23,7 +23,7 @@ export default function HomePage() {
   return (
     <>
       <div className="border-b border-navy/10 bg-spark px-5 py-3 text-center text-xs font-bold text-navy sm:text-sm">Free digital-skills bootcamp · Inaugural Cybersecurity intake in preparation</div>
-      <section className="relative isolate overflow-hidden border-b border-navy/10 bg-spark">
+      <section className="relative isolate overflow-hidden bg-spark">
         {/* The existing hero photo fills the section instead of sitting in a separate column. */}
         <img
           src={img("hero", 1920, 1080)}
@@ -42,7 +42,12 @@ export default function HomePage() {
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 -z-10 bg-spark/40 sm:bg-gradient-to-r sm:from-spark/75 sm:via-spark/40 sm:to-spark/10"
         />
-        <div className="relative mx-auto flex min-h-[34rem] max-w-7xl items-center px-5 py-16 sm:min-h-[38rem] sm:px-8 sm:py-20 lg:min-h-[42rem] lg:py-28">
+        {/* Fade the blue photo softly into the white section below, without a visible dividing line. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-40 bg-gradient-to-b from-transparent via-white/40 to-white sm:h-52 lg:h-60"
+        />
+        <div className="relative z-10 mx-auto flex min-h-[34rem] max-w-7xl items-center px-5 py-16 sm:min-h-[38rem] sm:px-8 sm:py-20 lg:min-h-[42rem] lg:py-28">
           <div className="w-full max-w-3xl">
             <p className="mb-5 flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.14em] text-navy sm:text-xs sm:tracking-widest">
               <span className="h-0.5 w-7 shrink-0 bg-navy" aria-hidden="true" />
