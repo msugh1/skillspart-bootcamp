@@ -1,4 +1,3 @@
-import { AnimatePresence, motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import { useId, useState } from "react";
 import type { Faq } from "../../data/faqs";
@@ -24,9 +23,9 @@ export default function Accordion({ items }: { items: Faq[] }) {
                 <ChevronDown size={20} aria-hidden className={`shrink-0 text-spark-dark transition-transform ${isOpen ? "rotate-180" : ""}`} />
               </button>
             </h3>
-            <AnimatePresence initial={false}>
+            
               {isOpen && (
-                <motion.div
+                <div
                   id={`${base}-${i}`}
                   role="region"
                   initial={{ height: 0, opacity: 0 }}
@@ -36,9 +35,9 @@ export default function Accordion({ items }: { items: Faq[] }) {
                   className="overflow-hidden"
                 >
                   <p className="px-5 pb-5 leading-relaxed text-muted">{item.a}</p>
-                </motion.div>
+                </div>
               )}
-            </AnimatePresence>
+            
           </div>
         );
       })}
