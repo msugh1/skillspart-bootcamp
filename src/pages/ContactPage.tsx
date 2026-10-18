@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHero eyebrow="Contact" title="Stay connected with SkillSpark.">
-        Follow our official company page for bootcamp announcements, programme information, and upcoming opportunities.
+        Email us with questions about the bootcamp, volunteering and partnerships, or follow our official company page for updates.
       </PageHero>
       <section className="mx-auto grid max-w-7xl gap-6 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-2">
         <div className="rounded-2xl border border-line bg-mist p-7 sm:p-10">
@@ -37,11 +37,11 @@ export default function ContactPage() {
           <span className="mb-6 grid size-12 place-items-center rounded-xl bg-mist text-spark-dark">
             <Mail size={24} aria-hidden />
           </span>
-          <h2 className="text-2xl font-bold text-navy">Company email coming soon</h2>
-          <p className="mt-3 max-w-lg leading-relaxed text-muted">
-            We're setting up an official SkillSpark email address for applications, enquiries and partnerships.
-            We'll publish it here as soon as it's ready.
-          </p>
+          <h2 className="text-2xl font-bold text-navy">Email SkillSpark</h2>
+          <p className="mt-3 max-w-lg leading-relaxed text-muted">Have a question about the bootcamp, applications, volunteering or partnerships? We'd be glad to hear from you.</p>
+          <a href={`mailto:${SITE_CONFIG.contactEmail}`} className="mt-7 inline-flex min-h-11 items-center gap-2 break-all font-bold text-navy underline decoration-spark underline-offset-4 hover:text-spark-dark">
+            {SITE_CONFIG.contactEmail} <ArrowUpRight size={17} aria-hidden />
+          </a>
           <p className="mt-6 text-sm text-muted">
             Applications are not yet open. The official Cybersecurity application form will be linked from the Apply page when registration begins.
           </p>
