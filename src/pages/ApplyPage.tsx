@@ -26,7 +26,7 @@ export default function ApplyPage() {
             </p>
           </div>
           <p className="mt-6 text-sm text-muted">
-            Need an update? Visit our <Link to="/contact" className="font-semibold text-navy underline decoration-spark underline-offset-4">contact page</Link> for official SkillSpark channels.
+            Need an update? Visit our <Link reloadDocument to="/contact" className="font-semibold text-navy underline decoration-spark underline-offset-4">contact page</Link> for official SkillSpark channels.
           </p>
         </div>
         <div className="rounded-2xl border border-line bg-white p-7 shadow-sm sm:p-10">
@@ -43,7 +43,7 @@ export default function ApplyPage() {
                 <span className="sr-only">(opens Google Forms in a new tab)</span>
               </a>
               <p className="mt-5 text-sm leading-relaxed text-muted">
-                An application does not guarantee admission or automatic certification. Read the <Link to="/privacy" className="font-semibold underline decoration-spark">privacy information</Link> before submitting.
+                An application does not guarantee admission or automatic certification. Read the <Link reloadDocument to="/privacy" className="font-semibold underline decoration-spark">privacy information</Link> before submitting.
               </p>
             </div>
           ) : (
@@ -57,7 +57,7 @@ export default function ApplyPage() {
               <p className="mt-4 text-sm text-muted">
                 No applicant information is collected on this page. IT Support and IT Automation are planned future tracks, not part of this intake.
               </p>
-              <Link to="/programmes/cybersecurity" className="mt-7 inline-flex min-h-11 items-center border-b-2 border-spark font-bold text-navy hover:text-spark-dark">
+              <Link reloadDocument to="/programmes/cybersecurity" className="mt-7 inline-flex min-h-11 items-center border-b-2 border-spark font-bold text-navy hover:text-spark-dark">
                 Explore the Cybersecurity programme
               </Link>
             </div>
