@@ -45,12 +45,14 @@ export const PROGRAMMES: Programme[] = [
   },
 ];
 export const CYBER = PROGRAMMES[0];
-// Topic previews are provisional. This is not a confirmed weekly timetable.
+// SkillSpark's suggested six-week pacing, not Coursera's official schedule.
+// Google's eight core cybersecurity courses are the primary coursework.
+// The AI job-search course is an optional career extension where accessible.
 export const CURRICULUM = [
-  { week: 1, title: "Digital safety and security mindset", body: "Understand why protecting information and devices matters." },
-  { week: 2, title: "Systems and networks", body: "Explore how computers and connected services communicate." },
-  { week: 3, title: "Threats and vulnerabilities", body: "Recognise common attack patterns, scams and technical weaknesses." },
-  { week: 4, title: "Authentication and identity", body: "Learn about passwords, multifactor authentication and permissions." },
-  { week: 5, title: "Everyday defensive practice", body: "Apply practical precautions to protect accounts and devices." },
-  { week: 6, title: "Security career pathways", body: "Explore entry points, further study and responsible professional practice." },
+  { week: 1, title: "Cybersecurity foundations and risk", courses: "Foundations of Cybersecurity; Play It Safe: Manage Security Risks", body: "Explore cybersecurity careers, the CIA triad, security ethics, risk frameworks, controls and security audits.", live: "Welcome and guided risk-assessment discussion." },
+  { week: 2, title: "Networking and network security", courses: "Connect and Protect: Networks and Network Security", body: "Learn network architecture, protocols, firewalls, network attacks, hardening and cloud security concepts.", live: "Network diagrams and network-security walkthrough." },
+  { week: 3, title: "Linux, SQL and security assets", courses: "Tools of the Trade: Linux and SQL; begin Assets, Threats, and Vulnerabilities", body: "Practise Linux commands and permissions, SQL queries and asset classification.", live: "Guided Linux and SQL exercises." },
+  { week: 4, title: "Threats, vulnerabilities and detection", courses: "Finish Assets, Threats, and Vulnerabilities; begin Sound the Alarm: Detection and Response", body: "Explore attacks, threat modelling, vulnerabilities, security logs and alert triage.", live: "Threat modelling and security-alert investigation." },
+  { week: 5, title: "Incident response and Python", courses: "Finish Sound the Alarm: Detection and Response; begin Automate Cybersecurity Tasks with Python", body: "Work with SIEM tools, incident handling, network traffic, Python fundamentals and security scripts.", live: "Incident-response scenario and Python introduction." },
+  { week: 6, title: "Automation, portfolio and career readiness", courses: "Finish Automate Cybersecurity Tasks with Python; Put It to Work: Prepare for Cybersecurity Jobs", body: "Practise Python automation, build a cybersecurity portfolio and prepare for entry-level applications. Coursera's AI job-search course is an optional follow-on.", live: "Portfolio review, career Q&A and next-steps planning." },
 ];
