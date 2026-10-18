@@ -35,7 +35,7 @@ export default function Footer() {
                 <span className="sr-only">(opens in a new tab)</span>
               </a>
             </li>
-            <li className="text-sm">Company email coming soon</li>
+            <li className="text-sm"><a href={`mailto:${SITE_CONFIG.contactEmail}`} className="inline-flex min-h-9 items-center font-medium text-navy underline decoration-spark underline-offset-4 hover:text-spark-dark">{SITE_CONFIG.contactEmail}</a></li>
           </ul>
         </div>
       </div>
