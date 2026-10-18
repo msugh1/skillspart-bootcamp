@@ -45,7 +45,7 @@ export default function HomePage() {
         {/* Fade the blue photo softly into the white section below, without a visible dividing line. */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-40 bg-gradient-to-b from-transparent via-white/40 to-white sm:h-52 lg:h-60"
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-16 bg-gradient-to-b from-transparent via-white/15 to-white sm:h-20 lg:h-24"
         />
         <div className="relative z-10 mx-auto flex min-h-[34rem] max-w-7xl items-center px-5 py-16 sm:min-h-[38rem] sm:px-8 sm:py-20 lg:min-h-[42rem] lg:py-28">
           <div className="w-full max-w-3xl">
