@@ -29,7 +29,7 @@ export default function CybersecurityPage() {
               {[CYBER.duration, CYBER.format, CYBER.level].map(label => <span key={label} className="rounded-full border border-line px-4 py-2">{label}</span>)}
             </div>
             <div className="mt-8"><ApplyButton /></div>
-            <p className="mt-4 text-sm text-muted">Exact dates, lesson schedule and learning access will be announced before intake.</p>
+            <p className="mt-4 text-sm text-muted">The six-week SkillSpark cohort combines independent Coursera coursework with one live learning session each week. Exact dates and access instructions will be shared with selected learners.</p>
           </div>
           <PhotoFrame name="cyber" w={900} h={740} eager />
         </div>
@@ -41,14 +41,14 @@ export default function CybersecurityPage() {
       </section>
       <section className="bg-mist px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-4xl">
-          <SectionHeading eyebrow="Curriculum preview" title="Proposed cybersecurity topics">These are illustrative topics, not a confirmed week-by-week syllabus. The official cohort curriculum will be shared before learning begins.</SectionHeading>
-          <ol className="mt-10 space-y-4">{CURRICULUM.map((topic, index) => <li key={topic.title}><Reveal><div className="flex gap-5 rounded-2xl border border-line bg-white p-6"><span className="font-bold text-spark-dark">{String(index + 1).padStart(2, "0")}</span><div><h3 className="text-lg font-bold">{topic.title}</h3><p className="mt-1 text-muted">{topic.body}</p></div></div></Reveal></li>)}</ol>
+          <SectionHeading eyebrow="Six-week curriculum" title="Learn with Google on Coursera">Our suggested six-week learning plan follows the Google Cybersecurity Professional Certificate courses on Coursera. Each week includes independent coursework and a SkillSpark live learning session. This is SkillSpark’s pacing guide, not Coursera’s official timetable.</SectionHeading>
+          <ol className="mt-10 space-y-4">{CURRICULUM.map((topic, index) => <li key={topic.title}><Reveal><div className="flex gap-5 rounded-2xl border border-line bg-white p-6"><span className="font-bold text-spark-dark">{String(index + 1).padStart(2, "0")}</span><div><h3 className="text-lg font-bold">{topic.title}</h3><p className="mt-2 text-sm font-semibold text-navy">{topic.courses}</p><p className="mt-2 text-muted">{topic.body}</p><p className="mt-3 text-sm text-spark-dark"><strong>Weekly live session:</strong> {topic.live}</p></div></div></Reveal></li>)}</ol>
         </div>
       </section>
       <section className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2">
         <div>
-          <SectionHeading eyebrow="Learning together" title="Structured, supported and online">Google Classroom, Google Meet and WhatsApp are the planned learning and communication tools, alongside sessions with industry guests and peer accountability.</SectionHeading>
-          <p className="mt-5 text-sm text-muted">Guest sessions and mentor allocations depend on the final cohort arrangements. Course access details will be provided to eligible participants.</p>
+          <SectionHeading eyebrow="Learning together" title="Structured, supported and online">Coursera hosts the core Google Cybersecurity Professional Certificate lessons, exercises and assessments. Each week, SkillSpark will hold a live learning session on Google Meet to discuss the coursework and practise key skills. WhatsApp supports peer communication and questions.</SectionHeading>
+          <p className="mt-5 text-sm text-muted">Learners work through Coursera at an intensive pace between sessions. Google Classroom may be used for coordination. Eligible learners will receive their course-access instructions before the cohort starts.</p>
         </div>
         <div className="rounded-2xl border border-line bg-white p-8">
           <h3 className="text-xl font-bold">Who should consider applying?</h3>
@@ -62,18 +62,18 @@ export default function CybersecurityPage() {
       <section className="border-t border-line bg-white px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow="Certificate pathway" title="Google Cybersecurity Certificate on Coursera">
-            Eligible SkillSpark learners can access the Google Cybersecurity Professional Certificate courses on Coursera. Access details will be provided before enrollment.
+            Coursera is the primary learning platform throughout the SkillSpark bootcamp. The weekly live sessions provide an additional layer of explanation, discussion and practical support.
           </SectionHeading>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-line bg-mist p-7"><h3 className="text-xl font-bold">SkillSpark intensive</h3><p className="mt-3 leading-relaxed text-muted">Free 6–8 week online bootcamp focused on cybersecurity basics and practical learning.</p></div>
+            <div className="rounded-2xl border border-line bg-mist p-7"><h3 className="text-xl font-bold">SkillSpark intensive</h3><p className="mt-3 leading-relaxed text-muted">Six weeks of Coursera study, with weekly SkillSpark live sessions and a supportive learning community.</p></div>
             <div className="rounded-2xl border border-line bg-white p-7"><h3 className="text-xl font-bold">Google Professional Certificate</h3><p className="mt-3 leading-relaxed text-muted">A separate Coursera programme requiring successful completion of all official coursework to earn Google's credential.</p></div>
           </div>
-          <p className="mt-6 text-sm text-muted">The full certificate can take longer than the SkillSpark intensive. Course access does not guarantee the credential.</p>
+          <p className="mt-6 text-sm text-muted">This is an ambitious six-week schedule. Coursera typically allows months for the complete certificate, so some learners may need to continue after the SkillSpark cohort. Joining the bootcamp does not guarantee a Google certificate.</p>
           <a className="mt-4 inline-flex min-h-11 items-center font-bold text-navy underline decoration-spark underline-offset-4" href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" rel="noopener noreferrer">View the official Coursera programme <span className="sr-only">(opens in a new tab)</span></a>
         </div>
       </section>
       <section className="mx-auto max-w-3xl px-5 py-16 sm:px-8 sm:py-24"><SectionHeading eyebrow="FAQs" title="Questions about Cybersecurity" /><div className="mt-8"><Accordion items={CYBER_FAQS} /></div></section>
-      <CallToAction title="Explore your next opportunity" body="Check when the free Cybersecurity intake opens." showProgramme={false} />
+      <CallToAction title="Explore your next opportunity" body="Explore the six-week Coursera-based Cybersecurity Bootcamp and application details." showProgramme={false} />
     </>
   );
 }
