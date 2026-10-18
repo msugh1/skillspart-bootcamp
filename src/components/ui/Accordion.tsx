@@ -18,7 +18,7 @@ export default function Accordion({ items }: { items: Faq[] }) {
                 aria-expanded={isOpen}
                 aria-controls={`${base}-${i}`}
                 onClick={() => setOpen(isOpen ? null : i)}
-                className="flex min-h-14 w-full items-center justify-between gap-4 px-5 py-4 text-left text-base font-bold text-navy"
+                className="flex min-h-14 w-full items-center justify-between gap-4 px-5 py-4 text-left text-base font-bold text-navy transition-colors duration-200 hover:bg-mist/70 motion-reduce:transition-none"
               >
                 {item.q}
                 <ChevronDown size={20} aria-hidden className={`shrink-0 text-spark-dark transition-transform ${isOpen ? "rotate-180" : ""}`} />
