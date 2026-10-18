@@ -15,7 +15,7 @@ const principles = [
 const steps = [
   { title: "Explore", body: "Find a learning pathway and review its requirements." },
   { title: "Apply", body: "Submit an application when the next intake opens." },
-  { title: "Learn", body: "Follow structured modules and practical online activities." },
+  { title: "Learn", body: "Follow Google’s coursework on Coursera and join weekly SkillSpark live sessions." },
   { title: "Grow", body: "Use new skills and pursue relevant credentials and opportunities." },
 ];
 export default function HomePage() {
@@ -27,7 +27,7 @@ export default function HomePage() {
           <div>
             <p className="mb-5 flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-navy"><span className="h-0.5 w-7 bg-navy" />SkillSpark Bootcamp</p>
             <h1 className="max-w-2xl text-4xl font-extrabold leading-[1.08] text-navy sm:text-5xl lg:text-6xl">Ignite your potential. <span className="text-navy">Build skills for tomorrow.</span></h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-navy/85">A free, 6–8 week online technology intensive for learners aged 16 and above, focused on practical skills and opportunities for underserved Nigerian communities.</p>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-navy/85">A free, six-week online technology intensive for learners aged 16 and above, focused on practical skills and opportunities for underserved Nigerian communities.</p>
             <div className="mt-9 flex flex-wrap gap-3"><ButtonLink to="/programmes/cybersecurity" variant="secondary">Explore Cybersecurity</ButtonLink><ApplyButton onBlue /></div>
             <p className="mt-7 text-sm text-navy/80">A Millennium Fellowship 2026 project aligned with SDG 4: Quality Education.</p>
           </div>
@@ -45,7 +45,7 @@ export default function HomePage() {
       <section className="bg-mist px-5 py-20 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow="Our first track" title="Start with Cybersecurity">
-            The inaugural learning focus introduces core digital safety, security awareness and practical cybersecurity foundations.
+            Our inaugural bootcamp uses Google’s Cybersecurity Professional Certificate coursework on Coursera, alongside weekly live sessions and practical support.
           </SectionHeading>
           <Reveal className="mt-10"><ProgrammeCard p={CYBER} featured /></Reveal>
         </div>
@@ -54,12 +54,12 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="lg:col-start-1 lg:row-start-1">
             <SectionHeading eyebrow="How it works" title="A connected learning experience">
-              Google Classroom is planned for weekly modules, Google Meet for practical sessions and WhatsApp for daily learning community communication.
+              Learners follow Google's cybersecurity courses on Coursera throughout the six-week bootcamp. Weekly live sessions on Google Meet reinforce the coursework, and WhatsApp connects the learning community.
             </SectionHeading>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">{[
-              { icon: ShieldCheck, label: "Practical modules" },{ icon: Users, label: "Peer collaboration" },{ icon: Compass, label: "Weekly expert sessions" },{ icon: HeartHandshake, label: "Follow-up mentorship" }
+              { icon: ShieldCheck, label: "Practical modules" },{ icon: Users, label: "Peer collaboration" },{ icon: Compass, label: "Weekly live sessions" },{ icon: HeartHandshake, label: "Coursera learning" }
             ].map(({ icon: Icon, label }) => <div key={label} className="flex items-center gap-3 rounded-xl border border-line p-4 font-semibold text-navy"><Icon size={19} className="text-spark-dark" aria-hidden />{label}</div>)}</div>
-            <p className="mt-4 text-sm text-muted">Expert sessions and follow-up mentorship are programme goals, subject to facilitator availability.</p>
+            <p className="mt-4 text-sm text-muted">Coursework is completed independently on Coursera, with a live session each week for questions and practical guidance.</p>
           </div>
           <Reveal className="lg:col-start-2 lg:row-start-1">
             <PhotoFrame name="lab" w={900} h={750} />
@@ -70,9 +70,9 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl items-start gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
             <SectionHeading eyebrow="Certificate pathway" title="Learn cybersecurity with Google on Coursera">
-              Eligible SkillSpark learners will have the opportunity to access the Google Cybersecurity Professional Certificate courses on Coursera.
+              The Google Cybersecurity Professional Certificate courses on Coursera are the main curriculum for SkillSpark’s six-week Cybersecurity Bootcamp.
             </SectionHeading>
-            <p className="mt-5 max-w-2xl leading-relaxed text-muted">The full Coursera certificate programme is separate from SkillSpark's 6–8 week intensive. Earning Google's official credential requires completing all course requirements and may take longer than the bootcamp.</p>
+            <p className="mt-5 max-w-2xl leading-relaxed text-muted">Learners work through Coursera lessons and assignments between weekly SkillSpark live sessions. Completing all the requirements for Google's official certificate may take longer than six weeks.</p>
             <a href="https://www.coursera.org/professional-certificates/google-cybersecurity" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex min-h-11 items-center border-b-2 border-spark font-bold text-navy hover:text-spark-dark">Explore the certificate course <span className="sr-only">(opens Coursera in a new tab)</span></a>
           </div>
           <div className="rounded-2xl border border-line bg-mist p-8">
@@ -80,7 +80,7 @@ export default function HomePage() {
             <ul className="mt-5 space-y-3 text-ink">
               <li>• Beginner-focused cybersecurity foundations</li>
               <li>• A structured online learning community</li>
-              <li>• Coursera course access for eligible learners</li>
+              <li>• Coursera coursework throughout the bootcamp</li>
               <li>• An opportunity to earn a recognised Google credential</li>
             </ul>
             <p className="mt-5 text-sm text-muted">Enrolling in SkillSpark does not automatically award the Google certificate.</p>
