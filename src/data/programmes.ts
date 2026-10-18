@@ -18,8 +18,8 @@ export const PROGRAMMES: Programme[] = [
   {
     slug: "cybersecurity", title: "Cybersecurity", status: "open-soon",
     eyebrow: "Inaugural programme", 
-    summary: "A free, beginner-friendly 6–8 week online intensive on cybersecurity basics. Eligible learners will have access to the Google Cybersecurity Professional Certificate courses on Coursera. Earning the credential requires completion of its full programme.",
-    duration: "6–8 weeks", format: "Online", level: "Beginner friendly", image: "cyber",
+    summary: "A free six-week online bootcamp using Google’s Cybersecurity Professional Certificate courses on Coursera, plus weekly SkillSpark live learning sessions and community support for eligible learners.",
+    duration: "6 weeks", format: "Coursera + live sessions", level: "Beginner friendly", image: "cyber",
     skills: ["Digital safety", "Cyber threats", "Network fundamentals", "Identity protection", "Defensive practices"],
     outcomes: [
       "Explain foundational security concepts",
