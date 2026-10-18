@@ -69,7 +69,7 @@ export default function HomePage() {
           <SectionHeading eyebrow="Why SkillSpark" title="Access should spark opportunity.">
             Technology opportunities should not depend on the resources available where you grew up. SkillSpark connects practical learning, structured guidance and peer support.
           </SectionHeading>
-          <div className="mt-10 grid gap-5 md:grid-cols-3">{principles.map(({ Icon, title, body }) => <div key={title} className="rounded-2xl border border-line bg-white p-7"><span className="mb-5 grid size-11 place-items-center rounded-xl bg-mist text-spark-dark"><Icon aria-hidden size={22} /></span><h3 className="text-xl font-bold">{title}</h3><p className="mt-2 leading-relaxed text-muted">{body}</p></div>)}</div>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">{principles.map(({ Icon, title, body }) => <div key={title} className="group rounded-2xl border border-line bg-white p-7 transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-spark/70 hover:shadow-md motion-reduce:transform-none motion-reduce:transition-none"><span className="mb-5 grid size-11 place-items-center rounded-xl bg-mist text-spark-dark transition-transform duration-300 group-hover:scale-110 motion-reduce:transform-none"><Icon aria-hidden size={22} /></span><h3 className="text-xl font-bold">{title}</h3><p className="mt-2 leading-relaxed text-muted">{body}</p></div>)}</div>
         </div>
       </section>
       <section className="bg-mist px-5 py-20 sm:px-8 sm:py-24">
@@ -88,7 +88,7 @@ export default function HomePage() {
             </SectionHeading>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">{[
               { icon: ShieldCheck, label: "Practical modules" },{ icon: Users, label: "Peer collaboration" },{ icon: Compass, label: "Weekly live sessions" },{ icon: HeartHandshake, label: "Coursera learning" }
-            ].map(({ icon: Icon, label }) => <div key={label} className="flex items-center gap-3 rounded-xl border border-line p-4 font-semibold text-navy"><Icon size={19} className="text-spark-dark" aria-hidden />{label}</div>)}</div>
+            ].map(({ icon: Icon, label }) => <div key={label} className="flex items-center gap-3 rounded-xl border border-line p-4 font-semibold text-navy transition-[background-color,border-color,transform] duration-200 hover:-translate-y-0.5 hover:border-spark hover:bg-mist/50 motion-reduce:transform-none motion-reduce:transition-none"><Icon size={19} className="text-spark-dark" aria-hidden />{label}</div>)}</div>
             <p className="mt-4 text-sm text-muted">Coursework is completed independently on Coursera, with a live session each week for questions and practical guidance.</p>
           </div>
           <Reveal className="lg:col-start-2 lg:row-start-1">
@@ -120,7 +120,7 @@ export default function HomePage() {
       <section className="border-t border-line px-5 py-20 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow="The learning journey" title="From interest to practical skills" />
-          <ol className="mt-12 grid gap-8 md:grid-cols-4">{steps.map((step, i) => <li key={step.title} className="border-t-2 border-spark pt-5"><span className="text-xs font-bold text-spark-dark">0{i + 1}</span><h3 className="mt-3 text-lg font-bold">{step.title}</h3><p className="mt-2 text-sm leading-relaxed text-muted">{step.body}</p></li>)}</ol>
+          <ol className="mt-12 grid gap-8 md:grid-cols-4">{steps.map((step, i) => <li key={step.title} className="border-t-2 border-spark pt-5 transition-transform duration-300 hover:translate-x-1 motion-reduce:transform-none motion-reduce:transition-none"><span className="text-xs font-bold text-spark-dark">0{i + 1}</span><h3 className="mt-3 text-lg font-bold">{step.title}</h3><p className="mt-2 text-sm leading-relaxed text-muted">{step.body}</p></li>)}</ol>
         </div>
       </section>
       <section className="bg-mist px-5 py-20 sm:px-8 sm:py-24">
