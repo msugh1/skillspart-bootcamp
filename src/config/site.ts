@@ -31,7 +31,7 @@ const googleFormUrl = safeGoogleFormUrl(import.meta.env.VITE_GOOGLE_FORM_URL ?? 
 export const SITE_CONFIG: SiteConfig = {
   name: "SkillSpark Bootcamp",
   tagline: "Free, practical digital-skills learning for underserved Nigerian youth.",
-  contactEmail: "", // Company mailbox not yet available.
+  contactEmail: "hello@skillspark.tech",
   phone: "",
   location: "",
   googleFormUrl,
