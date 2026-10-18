@@ -28,10 +28,6 @@ export default function Accordion({ items }: { items: Faq[] }) {
                 <div
                   id={`${base}-${i}`}
                   role="region"
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.25 }}
                   className="overflow-hidden"
                 >
                   <p className="px-5 pb-5 leading-relaxed text-muted">{item.a}</p>
