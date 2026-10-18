@@ -1,4 +1,5 @@
 import { Menu, X } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import ApplyButton from "../ui/ApplyButton";
@@ -28,12 +29,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-navy/10 bg-spark">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-5 sm:px-8">
-        <Link to="/" aria-label="SkillSpark Bootcamp home" className="shrink-0">
+        <Link reloadDocument to="/" aria-label="SkillSpark Bootcamp home" className="shrink-0">
           <Logo className="h-8 sm:h-9" />
         </Link>
         <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">
           {NAV.map((n) => (
-            <NavLink key={n.to} to={n.to} end={n.end} className={link}>{n.label}</NavLink>
+            <NavLink reloadDocument key={n.to} to={n.to} end={n.end} className={link}>{n.label}</NavLink>
           ))}
         </nav>
         <div className="hidden lg:block"><ApplyButton onBlue /></div>
@@ -48,15 +49,19 @@ export default function Header() {
           {open ? <X aria-hidden /> : <Menu aria-hidden />}
         </button>
       </div>
-      
+      <AnimatePresence>
         {open && (
-          <div
+          <motion.div
             id="mobile-nav"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2 }}
             className="fixed inset-x-0 top-18 bottom-0 overflow-y-auto bg-white px-5 py-6 lg:hidden"
           >
             <nav aria-label="Mobile" className="flex flex-col">
               {NAV.map((n) => (
-                <NavLink
+                <NavLink reloadDocument
                   key={n.to}
                   to={n.to}
                   end={n.end}
@@ -67,9 +72,9 @@ export default function Header() {
               ))}
             </nav>
             <div className="mt-6"><ApplyButton className="w-full" /></div>
-          </div>
+          </motion.div>
         )}
-      
+      </AnimatePresence>
     </header>
   );
 }
