@@ -8,7 +8,7 @@ export default function ApplyPage() {
   return (
     <>
       <PageHero eyebrow="Applications" title="Take the first step.">
-        SkillSpark is preparing a free, six-week online Cybersecurity Bootcamp built around Google’s courses on Coursera and weekly live sessions for Nigerian students from underserved communities.
+        Apply for SkillSpark’s free, six-week online Cybersecurity Bootcamp, built around Google’s courses on Coursera and weekly live sessions for learners in underserved Nigerian communities.
       </PageHero>
       <section className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:py-24">
         <div>

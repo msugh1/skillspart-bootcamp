@@ -26,7 +26,7 @@ function safeGoogleFormUrl(raw: string): string {
   }
 }
 
-const googleFormUrl = safeGoogleFormUrl(import.meta.env.VITE_GOOGLE_FORM_URL ?? "");
+const googleFormUrl = safeGoogleFormUrl("https://docs.google.com/forms/d/e/1FAIpQLSctUS101EyMzWc7VCLtIIXzbeltTnanWiKibMhofVxrx1OS1w/viewform");
 
 export const SITE_CONFIG: SiteConfig = {
   name: "SkillSpark Bootcamp",
@@ -35,8 +35,8 @@ export const SITE_CONFIG: SiteConfig = {
   phone: "",
   location: "",
   googleFormUrl,
-  // Registration stays closed unless BOTH the URL and deliberate launch flag are set.
-  applicationsOpen: import.meta.env.VITE_APPLICATIONS_OPEN === "true" && !!googleFormUrl,
+  // The inaugural Cybersecurity intake is open. Set false to close applications.
+  applicationsOpen: true && !!googleFormUrl,
   socials: [
     { label: "SkillSpark on LinkedIn", url: "https://www.linkedin.com/company/skillspark-bootcamp/" },
   ],

@@ -1,7 +1,7 @@
 {
   "description": "SkillSpark Bootcamp is a free, 6–8 week online digital-skills initiative beginning with Cybersecurity and planning IT Support and IT Automation.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,

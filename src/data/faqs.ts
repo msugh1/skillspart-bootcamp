@@ -5,7 +5,7 @@ export const CYBER_FAQS: Faq[] = [
   { q: "How will learning work?", a: "Google's Cybersecurity Professional Certificate courses on Coursera provide the core lessons and assessments. SkillSpark adds weekly live sessions on Google Meet, with a WhatsApp learning community. Google Classroom may support coordination." },
   { q: "Will Google Cybersecurity course access be available?", a: "SkillSpark uses Google's Cybersecurity Professional Certificate on Coursera throughout the bootcamp. Course access and eligibility details will be shared with selected learners." },
   { q: "Will finishing SkillSpark automatically earn the Google certificate?", a: "No. SkillSpark follows Google's Coursera coursework, but the official Google certificate is awarded only after completing all required Coursera courses and assessments. Six-week participation alone does not qualify." },
-  { q: "How do I apply?", a: "Cybersecurity is the only opening track. SkillSpark will link to an official Google Form from the Apply page when registration opens." },
+  { q: "How do I apply?", a: "Applications are open for the Cybersecurity intake. Visit the Apply page and use the official SkillSpark Google Form. Applying is free, and submission does not guarantee selection." },
 ];
 export const GENERAL_FAQS: Faq[] = [
   { q: "Is SkillSpark free?", a: "Yes. SkillSpark's six-week Cybersecurity Bootcamp is free for selected learners. Coursera access is subject to programme eligibility and provisioning." },
@@ -13,5 +13,5 @@ export const GENERAL_FAQS: Faq[] = [
   { q: "Which tracks open first?", a: "Cybersecurity only. IT Support and IT Automation are planned for later cohorts." },
   { q: "What learning tools will be used?", a: "Learners study on Coursera, join weekly live sessions on Google Meet and participate in a WhatsApp community. Google Classroom may help with coordination." },
   { q: "How large will the cohort be?", a: "SkillSpark's planning target is 50–200 learners, subject to available capacity." },
-  { q: "How do I apply?", a: "The Google Form will be linked from the Apply page when applications open." },
+  { q: "How do I apply?", a: "Applications are open for the Cybersecurity intake. Use the official Google Form linked from the Apply page." },
 ];

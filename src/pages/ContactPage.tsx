@@ -4,6 +4,7 @@ import PageHero from "../components/ui/PageHero";
 import SectionHeading from "../components/ui/SectionHeading";
 import { SITE_CONFIG } from "../config/site";
 import { GENERAL_FAQS } from "../data/faqs";
+import { Link } from "react-router";
 
 export default function ContactPage() {
   const companyLinkedIn = SITE_CONFIG.socials.find((social) => social.label === "SkillSpark on LinkedIn");
@@ -43,7 +44,9 @@ export default function ContactPage() {
             {SITE_CONFIG.contactEmail} <ArrowUpRight size={17} aria-hidden />
           </a>
           <p className="mt-6 text-sm text-muted">
-            Applications are not yet open. The official Cybersecurity application form will be linked from the Apply page when registration begins.
+            Applications are now open for the Cybersecurity intake. Visit our{" "}
+            <Link reloadDocument to="/apply" className="font-semibold text-navy underline decoration-spark underline-offset-4">Apply page</Link>{" "}
+            to complete the official application form.
           </p>
         </div>
       </section>
